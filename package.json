@@ -1,0 +1,21 @@
+{
+  "name": "foolproof-exam-platform",
+  "private": true,
+  "workspaces": [
+    "backend",
+    "frontend",
+    "electron"
+  ],
+  "scripts": {
+    "install:all": "npm install --workspaces",
+    "dev:backend": "npm --workspace backend run dev",
+    "dev:frontend": "npm --workspace frontend run dev",
+    "build:frontend": "npm --workspace frontend run build",
+    "start:backend": "npm --workspace backend start",
+    "start:electron": "npm --workspace electron start"
+  },
+  "allowScripts": {
+    "esbuild@0.28.2": true,
+    "electron@38.8.6": true
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "foolproof-secure-exam-client",
+  "version": "1.0.0",
+  "private": true,
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "dependencies": {
+    "electron": "^38.0.0"
+  }
+}

@@ -1,0 +1,7 @@
+Write-Host "FoolProof Exam Platform demo"
+Write-Host "1) Start MySQL and load db/schema.sql then db/seed.sql"
+Write-Host "2) Copy backend/.env.example to backend/.env and verify credentials"
+Write-Host "3) Run: npm install --workspaces"
+Write-Host "4) Terminal A: npm run dev:backend"
+Write-Host "5) Terminal B: npm run dev:frontend"
+Write-Host "6) Optional secure client: set FP_FRONTEND_URL=http://localhost:5173 ; npm run start:electron"
