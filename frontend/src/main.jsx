@@ -3,7 +3,7 @@ import {createRoot} from 'react-dom/client';
 import {ShieldCheck,Sun,Moon,LayoutDashboard,BookOpen,Users,Activity,FileText,LogOut,LockKeyhole,Wifi,WifiOff,MonitorCheck,Eye,Clock3,AlertTriangle,CheckCircle2,Download,Search,ChevronRight,ServerCog} from 'lucide-react';
 import './styles.css';
 
-const API=localStorage.getItem('fp_api')||'http://localhost:4000/api';
+const API=localStorage.getItem('fp_api')||import.meta.env.VITE_API_URL||'/api';
 async function api(path,opts={}){const r=await fetch(API+path,{headers:{'Content-Type':'application/json',...(opts.headers||{})},...opts});let d={};try{d=await r.json()}catch{} if(!r.ok)throw new Error(d.error||'Request failed');return d;}
 
 function App(){
